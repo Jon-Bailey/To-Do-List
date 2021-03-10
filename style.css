@@ -20,6 +20,9 @@ body {
   background-color: white;
   border-radius: 10px;
   box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
 }
 
 .header {
@@ -41,7 +44,7 @@ body {
 }
 
 .content {
-  min-height: 330px;
+  height: 60%;
   padding: 10px;
 }
 
@@ -61,11 +64,14 @@ li button {
   background-color: rgb(58, 58, 58);
   border: none;
   width: 20px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .add-item {
   display: flex;
   padding: 0 5px 0 5px;
+  position: relative;
 }
 
 .add-item input {
@@ -73,6 +79,7 @@ li button {
   height: 30px;
   border-radius: 6px 0 0 6px;
   border: 1px solid gray;
+  margin-bottom: 5px;
 }
 
 #submit {
@@ -81,14 +88,20 @@ li button {
   border-radius: 0 6px 6px 0;
   border: none;
   width: 50px;
+  margin-bottom: 5px;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .remove-button {
   background-image: url();
+}
+
+.line-through {
+  text-decoration: line-through;
 }

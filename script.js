@@ -15,12 +15,25 @@ const addToDo = () => {
     remove.addEventListener('click', function() {
     this.parentElement.style.display = 'none';
     });
+    /*item.addEventListener('click', function() {
+        this.classList.add('line-through')
+    })*/
+    item.addEventListener('click', function() {
+        if(this.className !== 'line-through') {
+            this.classList.add('line-through');
+        } else {
+            this.classList.remove('line-through');
+        }
+    })
 }
 
 //when submit is clicked, run the addToDo function.
 submit.addEventListener('click', function() {
     addToDo();
 });
+
+
+
 
 /*input.addEventListener('keyup', function() {
     if (Event.key === 13) {
